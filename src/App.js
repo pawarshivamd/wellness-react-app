@@ -8,7 +8,6 @@ import Portfolio from './pages/Portfolio';
 import Blogs from './pages/Blogs';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
-import LogIn from './pages/LogIn';
 import Error from './pages/Error';
 import { ThemeProvider } from 'styled-components';
 import { createTheme } from '@mui/material';
@@ -40,7 +39,6 @@ function App() {
         <Route path='/blog' element={<Blogs/>} />
         <Route path='/pricing' element={<Pricing/>} />
         <Route path='/contact' element={<Contact/>} />
-        <Route path='/login' element={<LogIn/>} />
         <Route path='*' element={<Error/>} />
       </Routes>
       <Footer/>

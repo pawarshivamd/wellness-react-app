@@ -9,8 +9,8 @@ const AboutComSection = () => {
   <Box  className='about-section' sx={{ background: `url(${imgAboutBg}) `, backgroundRepeat: "no-repeat", backgroundSize: "cover", position: "relative", mb: 5 }}>
     <Container maxWidth="lg" border="1px solid red">
     <Grid container >
-      <Grid item lg={6} md={6} sm={12} xs={12} >
-          <Box  className="img-box">
+      <Grid item  lg={6} md={6}   sx={{display: { xs: "none", md: "block" }}}>
+          <Box  className="img-box" >
             <Img src={aboutImg}  width="100%" height="100%" sx={{position:"absolute"}} />
           </Box>
       </Grid>

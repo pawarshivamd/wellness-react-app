@@ -17,7 +17,6 @@ const navLinks = [
   { path: "/portfolio", label: "Portfolio" },
   { path: "/blog", label: "Blogs" },
   { path: "/pricing", label: "Pricing" },
-  { path: "/contact", label: "Contact" }
 ];
 
 const Navbar = () => {
@@ -47,13 +46,9 @@ const Navbar = () => {
           <Box>
             <Img src={Logo} alt="logo" className="logo-nav" />
           </Box>
-
-          {/* Mobile Menu Icon */}
           <Box className="menubar" onClick={toggleMenu}>
             <MenuIcon className="menu-icon" />
           </Box>
-
-          {/* Menu Items */}
           <Box
             className={`menun-section ${showMenu ? "menu-visible" : "menu-hidden"}`}
           >
@@ -74,25 +69,24 @@ const Navbar = () => {
                 <Button
                   variant="contained"
                   component={NavLink}
-                  to="/login"
+                  to="/contact"
                   className="login-btn"
                   onClick={handleNavLinkClick}
                 >
-                  Log in
+                  Contact
                 </Button>
               </li>
             </ul>
           </Box>
-
-          {/* Desktop Login Button */}
           <Box className="login-section">
             <Button
               variant="contained"
               component={NavLink}
-              to="/login"
+              to="/contact"
+              onClick={handleNavLinkClick}
               className="login-btn"
             >
-              Log in
+             Contact
             </Button>
           </Box>
         </Box>

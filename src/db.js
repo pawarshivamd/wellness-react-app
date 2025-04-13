@@ -93,53 +93,53 @@ export const WorkApi = [
   {
     id: "0",
     imgwork:
-      "https://avatars.mds.yandex.net/i?id=c03990a4c61e4c6af6b29f82f3dc7955bcc9a628-9848534-images-thumbs&n=13",
+      "https://avatars.mds.yandex.net/i?id=8cc51ba00a6982c1a615601e1b154faa5a40b846-4055204-images-thumbs&n=13",
     category: "Development",
   },
   {
     id: "1",
     imgwork:
-      "https://avatars.mds.yandex.net/get-altay/927916/2a000001882ddaedc6f7efde8a26ef0bc7f8/XXL_height",
+      "https://avatars.mds.yandex.net/i?id=ec0e4db24344b2c59d6d51d0824cf3f72d313efc-4868957-images-thumbs&n=13",
     category: "ui/ux",
   },
   {
     id: "2",
     imgwork:
-      "http://ic.pics.livejournal.com/zm_sochi/17660719/997581/997581_original.jpg",
+      "https://avatars.mds.yandex.net/i?id=bc2cef5db9ae3f4486e6e7ff57a38effed5da089-12655143-images-thumbs&n=13",
     category: "Development",
   },
   {
     id: "3",
     imgwork:
-      "https://avatars.mds.yandex.net/get-altay/6302373/2a000001806157581fabdf219e721cf3c5ad/XXL_height",
+      "https://avatars.mds.yandex.net/i?id=2f648c2b02a670b7d9da022f7c88a91badbe1c73-12505840-images-thumbs&n=13",
     category: "Branding",
   },
   {
     id: "4",
-    imgwork: "https://www.occrp.org/images/sochi.jpeg",
+    imgwork: "https://avatars.mds.yandex.net/i?id=08b13ac28b432d229ef9adca53c9752a75942821-7754586-images-thumbs&n=13",
     category: "SEO",
   },
   {
     id: "5",
     imgwork:
-      "https://avatars.mds.yandex.net/get-altay/1592431/2a00000176ab7875a20ce65b67cecef8bee6/XXXL",
-    category: "Branding ",
+      "https://yandex.com/images/search?p=2&text=Branding&pos=30&rpt=simage&img_url=http%3A%2F%2Fi.pinimg.com%2Foriginals%2F96%2F57%2Fe9%2F9657e92a3948173a64ed5f4f485c86fd.jpg&lr=10555",
+    category: "Branding",
   },
   {
     id: "6",
-    imgwork: "https://cdn.wallpapersafari.com/13/42/p5IsNb.jpg",
+    imgwork: "https://avatars.mds.yandex.net/i?id=87d658b77c5228e8958bf85f038415921c563679-8485874-images-thumbs&n=13",
     category: "SEO",
   },
   {
     id: "7",
     imgwork:
-      "https://storage.myseldon.com/news-pict-3c/3C710E76E0B047795BC1EF033B445A90",
+      "https://avatars.mds.yandex.net/i?id=66a6c15001758373d4fc13c5bfd36d02bfb0ca1c-5235311-images-thumbs&n=13",
     category: "Wordpress",
   },
   {
     id: "8",
     imgwork:
-      "https://i.pinimg.com/originals/31/bd/2c/31bd2cbacb08bf6f58449eb0f875be30.jpg",
+      "https://avatars.mds.yandex.net/i?id=88a7d0f1ad7742e8ac8f813abec7a46232ebe59a-12613135-images-thumbs&n=13",
     category: "Wordpress",
   },
 ];

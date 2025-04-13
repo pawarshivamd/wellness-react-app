@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { WorkApi } from "../db";
 import HeadingSection from "./ui/HeadingSection";
 import { Img } from "../ui";
+
+// Make sure these EXACTLY match your WorkApi categories (including case)
 const categories = [
   "All",
   "Development",
-  "UI/UX",
+  "ui/ux",  // Changed from "UI/UX" to match WorkApi
   "Branding",
   "SEO",
   "Wordpress",
@@ -19,64 +21,62 @@ const PortfolioSection = () => {
 
   const filterItems = (category) => {
     setActiveLink(category);
-    setWorkItems(
-      category === "All"
-        ? WorkApi
-        : WorkApi.filter((item) => item.category === category)
+    
+    if (category === "All") {
+      setWorkItems(WorkApi);
+      return;
+    }
+
+    const filteredItems = WorkApi.filter(item => 
+      item.category === category  // Exact match now that cases are consistent
     );
+    
+    setWorkItems(filteredItems);
   };
+
   return (
     <Container>
       <HeadingSection
         label="Works"
         title="Our Portfolio"
-        description="All the lorem Ipsum generators on the Internet tend to repeat predefined
-        chunks as necessary, making this the first true generator on the
-        Internet."
+        description="All the lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
       />
+
       <Box className="portfolio-link-group">
         {categories.map((cat) => (
-          <Link
+          <Box
             key={cat}
-            className={`portfolio-link ${activeLink === cat ? "active" : ""}`}
             onClick={() => filterItems(cat)}
-            style={{ cursor: "pointer" }}
+            className={`portfolio-link ${activeLink === cat ? "active" : ""}`}
+            sx={{
+              cursor: "pointer",
+            }}
           >
             {cat}
-          </Link>
+          </Box>
         ))}
       </Box>
 
-      <Grid container spacing={3} sx={{ mt: 5 }}>
-        {workItems.length > 0 ? (
-          workItems.map((curEle, index) => {
-            const { imgwork, category } = curEle;
-            return (
-              <Grid item lg={4} md={6} sm={6} xs={12} key={`${index}`}>
-                <Card sx={{ height: "350px" }}>
-                  <Img
-                    src={imgwork}
-                    alt={category}
-                    sx={{ objectFit: "cover", height: "100%" }}
-                  />
-                </Card>
-              </Grid>
-            );
-          })
-        ) : (
-          <Grid item xs={12}>
-            <Box
-              sx={{
-                textAlign: "center",
-                py: 5,
-                color: "text.secondary",
-                fontSize: "2.2rem",
-              }}
-            >
-              🚫 No items found in this category.
-            </Box>
+      <Grid container spacing={3}>
+        {workItems.map((item) => (
+          <Grid item lg={4} md={6} sm={6} xs={12} key={item.id}>
+            <Card sx={{ height: "350px", overflow: 'hidden' }}>
+              <Img
+                src={item.imgwork}
+                alt={item.category}
+                sx={{ 
+                  objectFit: "cover", 
+                  height: "100%", 
+                  width: "100%",
+                  transition: 'transform 0.3s',
+                  '&:hover': {
+                    transform: 'scale(1.05)'
+                  }
+                }}
+              />
+            </Card>
           </Grid>
-        )}
+        ))}
       </Grid>
     </Container>
   );
