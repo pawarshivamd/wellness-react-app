@@ -18,10 +18,10 @@ import teamImg2 from "./img/team2user.png";
 import teamImg3 from "./img/team3user.png";
 import aboutImg1 from "./img/aboutgird1.jpg";
 import aboutImg2 from "./img/aboutgird2.jpg";
-import blogImg1 from "./img/reacentblog.svg";
-import blogImg2 from "./img/reacentblog2.svg";
-import blogImg3 from "./img/reacentblog.svg";
-import blogImg4 from "./img/reacentblog.svg";
+import blogImg1 from "./img/reacentblog.webp";
+import blogImg2 from "./img/reacentblog2.webp";
+import blogImg3 from "./img/reacentblog.webp";
+import blogImg4 from "./img/reacentblog.webp";
 
 export {
   FALLBACK,

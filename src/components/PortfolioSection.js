@@ -1,15 +1,13 @@
 import { Box, Card, Container, Grid } from "@mui/material";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { WorkApi } from "../db";
 import HeadingSection from "./ui/HeadingSection";
 import { Img } from "../ui";
 
-// Make sure these EXACTLY match your WorkApi categories (including case)
 const categories = [
   "All",
   "Development",
-  "ui/ux",  // Changed from "UI/UX" to match WorkApi
+  "ui/ux",  
   "Branding",
   "SEO",
   "Wordpress",
@@ -28,7 +26,7 @@ const PortfolioSection = () => {
     }
 
     const filteredItems = WorkApi.filter(item => 
-      item.category === category  // Exact match now that cases are consistent
+      item.category === category  
     );
     
     setWorkItems(filteredItems);
